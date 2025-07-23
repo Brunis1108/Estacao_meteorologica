@@ -9,8 +9,8 @@
 #include "web_site.h"
 
 // Configurações de WiFi
-#define WIFI_SSID "ArcherC50 2.4G"
-#define WIFI_PASS "mb17012019"
+#define WIFI_SSID "SEU SIID"
+#define WIFI_PASS "SUA SENHA"
 
 // Definindo as variáveis globais
 struct st_dados dados = {0}; // inicia tudo como zero
