@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Estação Meteorológica</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- <style>
+        * {
+            border: none;
+            margin: none;
+            padding: none;
+            box-sizing: border-box;
+            outline: none;
+            text-align: center;
+            background-color: #ffa;
+        }
+        button,
+        input {
+            border: 1px solid #0000ff;
+            border-radius: 5px;
+        }
+        button:hover{
+            cursor: pointer;
+        }
+    </style> -->
+</head>
+
+<body>
+    <h1>Estacao Metereologica</h1>
+    <div id="info">
+        <h3>Temperatura: <span> °C</span></h3>
+        <h3>Umidade: <span> %</span></h3>
+        <h3>Pressão: <span> kpa</span></h3>
+    </div>
+
+    <div id="container">
+        <div>
+            <select id="varSelect">
+                <option value="temp">Temperatura</option>
+                <option value="umi">Umidade</option>
+                <option value="pres">Pressão</option>
+            </select>
+        </div>
+
+        <div id="div_inp_minMax">
+
+                <div class="form-linha">
+                    <label for="min">Minimo:</label>
+                    <input type="number" min="0" placeholder="Min" value="0">
+                </div>
+                <div class="form-linha">
+                    <label for="max">Maximo:</label>
+                    <input type="number" min="0" placeholder="Max" value="0">
+                </div>
+                <div class="form-linha">
+                    <label for="ajuste">Ajuste:</label>
+                    <input type="number" min="0" placeholder="Calibragem" value="0">
+
+                </div>
+                <button>Enviar</button>
+        </div>
+
+    </div>
+    <h3>Variacao em Tempo Real</h3>
+
+    <canvas id="grafico"></canvas>
+    
+    <script src="./script.js"></script>
+</body>
+
+</html>
